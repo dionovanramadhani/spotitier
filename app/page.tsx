@@ -1,5 +1,7 @@
 import MusicSearch from "@/components/music-search";
 import Trendings from "@/components/trendings";
+import GlobalTopTiers from "@/components/global-top-tiers";
+import BottomCTA from "@/components/bottom-cta";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,7 +12,9 @@ export default function Home() {
       {/* Trending Artist */}
       <Trendings />
       {/* Global Top Tiers */}
+      <GlobalTopTiers />
       {/* Bottom CTA */}
+      <BottomCTA />
     </div>
   );
 }
