@@ -8,8 +8,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import ActionBtnGreen from "./buttons/action-button-green";
 
 const NAV_ITEMS = [
-  { menuTitle: "explore", path: "#", available: true },
-  { menuTitle: "community", path: "#", available: false },
+  { menuTitle: "explore", path: "#explore", available: true },
+  { menuTitle: "trendings", path: "#", available: false },
   { menuTitle: "tiers", path: "#", available: false },
 ] as const;
 
@@ -96,13 +96,8 @@ export default function Navbar() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.3 }}
-          className="hidden md:block relative pr-2 pb-2.5"
+          className="hidden md:block"
         >
-          {/* Static shadow layer */}
-          <div
-            className="absolute left-2 top-2.5 right-0 bottom-0 bg-[#1B1B1B]"
-            aria-hidden="true"
-          />
           <ActionBtnGreen onClick={() => {}}>login with spotify</ActionBtnGreen>
         </motion.div>
 
@@ -168,14 +163,7 @@ export default function Navbar() {
               ))}
             </ul>
             <div className="px-6 pb-5">
-              <div className="relative pr-1.5 pb-2">
-                {/* Static shadow layer */}
-                <div
-                  className="absolute left-1.5 top-2 right-0 bottom-0 bg-[#1B1B1B]"
-                  aria-hidden="true"
-                />
-                <ActionBtnGreen onClick={() => {}}>login with spotify</ActionBtnGreen>
-              </div>
+              <ActionBtnGreen onClick={() => {}}>login with spotify</ActionBtnGreen>
             </div>
           </motion.div>
         )}
