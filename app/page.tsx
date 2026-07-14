@@ -1,4 +1,5 @@
 import MusicSearch from "@/components/music-search";
+import Trendings from "@/components/trendings";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       {/* Rank Your Sound */}
       <MusicSearch />
       {/* Trending Artist */}
+      <Trendings />
       {/* Global Top Tiers */}
       {/* Bottom CTA */}
     </div>

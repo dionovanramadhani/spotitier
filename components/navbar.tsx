@@ -54,7 +54,7 @@ export default function Navbar() {
       variants={navbarVariants}
       initial="hidden"
       animate="visible"
-      className="fixed top-0 z-50 w-full border-b-[6px] border-[#1B1B1B] "
+      className="fixed top-0 z-50 w-full border-b-[6px] border-[#1B1B1B] bg-[#F4F0E6]"
     >
       {/* Main bar */}
       <div className="flex items-center justify-between px-6 py-4 md:px-10">

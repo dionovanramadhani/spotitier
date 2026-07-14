@@ -5,7 +5,7 @@ import { IoIosSearch } from "react-icons/io";
 
 export default function SearchBar() {
   return (
-    <div className="w-full md:w-4xl font-grotesk relative pr-3 pb-3">
+    <div className="w-full lg:w-4xl font-grotesk relative pr-3 pb-3">
       {/* Static shadow layer */}
       <div
         className="absolute left-3 top-3 right-0 bottom-0 bg-[#1B1B1B]"
