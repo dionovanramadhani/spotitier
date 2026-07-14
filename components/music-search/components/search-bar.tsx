@@ -16,7 +16,7 @@ export default function SearchBar() {
         <IoIosSearch size={24} className="md:hidden" />
         <IoIosSearch size={32} className="hidden md:block" />
         <input
-          className="placeholder:font-bold placeholder:text-[#3D4A3D]/30 placeholder:text-[14px] md:placeholder:text-[24px] flex-1 text-[14px] md:text-[24px] text-[#1B1B1B] p-2 md:p-3 font-semibold outline-none border-none"
+          className="placeholder:font-bold placeholder:text-[#3D4A3D]/30 placeholder:text-[14px] md:placeholder:text-[24px] flex-1 text-[14px] md:text-[24px] text-[#1B1B1B] p-2 md:p-3 font-semibold outline-none border-none [caret-shape:block]"
           placeholder="SEARCH ARTISTS, ALBUMS, OR GENRES..."
         />
         <ActionBtnGreen onClick={() => {}}>
